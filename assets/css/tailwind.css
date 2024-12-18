@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: rgba(255, 255, 255, 1.00);
+        --foreground: rgba(2, 6, 17, 0.04);
+        --card: rgba(255, 255, 255, 1.00);
+        --card-foreground: rgba(2, 6, 17, 0.9);
+        --popover: rgba(255, 255, 255, 1.00);
+        --popover-foreground: rgba(2, 6, 17, 0.04);
+        --primary: rgba(185, 28, 28, 1);
+        --primary-foreground: rgba(248, 249, 250, 0.98);
+        --secondary: rgba(243, 244, 246, 0.96);
+        --secondary-foreground: rgba(17, 24, 39, 0.11);
+        --muted: rgba(243, 244, 246, 0.96);
+        --muted-foreground: rgba(107, 114, 128, 0.46);
+        --accent: rgba(243, 244, 246, 0.96);
+        --accent-foreground: rgba(17, 24, 39, 0.11);
+        --destructive: rgba(238, 68, 68, 0.60);
+        --destructive-foreground: rgba(248, 249, 250, 0.98);
+        --border: rgba(229, 231, 235, 0.91);
+        --input: rgba(229, 231, 235, 0.91);
+        --ring: rgba(185, 28, 28, 1);
+        --sidebar-background: rgba(248, 249, 250, 0.98);
+        --sidebar-foreground: rgba(2, 6, 17, 0.04);
+        --sidebar-primary: rgba(185, 28, 28, 1);
+        --sidebar-primary-foreground: rgba(248, 249, 250, 0.98);
+        --sidebar-accent: rgba(243, 244, 246, 0.96);
+        --sidebar-accent-foreground: rgba(2, 6, 17, 0.04);
+        --sidebar-border: rgba(229, 231, 235, 0.91);
+        --sidebar-ring: rgba(185, 28, 28, 1);
+        --sidebar-input: rgba(229, 231, 235, 0.91);
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --dark-background: rgba(2, 6, 17, 0.04);
+        --dark-foreground: rgba(248, 249, 250, 0.98);
+        --dark-card: rgba(2, 6, 17, 0.04);
+        --dark-card-foreground: rgba(248, 249, 250, 0.98);
+        --dark-popover: rgba(2, 6, 17, 0.04);
+        --dark-popover-foreground: rgba(248, 249, 250, 0.98);
+        --dark-primary: rgba(109, 39, 217, 0.50);
+        --dark-primary-foreground: rgba(248, 249, 250, 0.98);
+        --dark-secondary: rgba(31, 41, 55, 0.17);
+        --dark-secondary-foreground: rgba(248, 249, 250, 0.98);
+        --dark-muted: rgba(31, 41, 55, 0.17);
+        --dark-muted-foreground: rgba(156, 162, 174, 0.65);
+        --dark-accent: rgba(31, 41, 55, 0.17);
+        --dark-accent-foreground: rgba(248, 249, 250, 0.98);
+        --dark-destructive: rgba(127, 29, 29, 0.31);
+        --dark-destructive-foreground: rgba(248, 249, 250, 0.98);
+        --dark-border: rgba(31, 41, 55, 0.17);
+        --dark-input: rgba(31, 41, 55, 0.17);
+        --dark-ring: rgba(109, 39, 217, 0.50);
+        --dark-sidebar-background: rgba(13, 19, 31, 0.09);
+        --dark-sidebar-foreground: rgba(248, 249, 250, 0.98);
+        --dark-sidebar-primary: rgba(109, 39, 217, 0.50);
+        --dark-sidebar-primary-foreground: rgba(248, 249, 250, 0.98);
+        --dark-sidebar-accent: rgba(30, 41, 59, 0.17);
+        --dark-sidebar-accent-foreground: rgba(248, 249, 250, 0.98);
+        --dark-sidebar-border: rgba(31, 41, 55, 0.17);
+        --dark-sidebar-ring: rgba(109, 39, 217, 0.50);
+        --dark-sidebar-input: rgba(31, 41, 55, 0.17);
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    html {
+        @apply antialiased;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    }
+}

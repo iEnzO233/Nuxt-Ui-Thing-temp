@@ -1,0 +1,10 @@
+.rtl {
+    direction: rtl !important;
+}
+
+.custom-sonner [data-icon]{
+ @apply ml-0.5
+}
+button {
+    @apply active:scale-95 duration-150 hover:bg-opacity-10
+}
